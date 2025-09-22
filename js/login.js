@@ -9,7 +9,7 @@ document.getElementById("login-form").addEventListener("submit", async (e) => {
     };
 
     try {
-        const res = await fetch(`${API_BASE}/auth/login`, {
+        const res = await fetch(`${API_BASE}/auth/login:8000`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(loginData),

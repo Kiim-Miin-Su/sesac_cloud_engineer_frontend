@@ -2,7 +2,7 @@ const API_BASE = "http://15.165.5.106"; // Nginx 퍼블릭 IP
 
 document.getElementById("check-btn").addEventListener("click", async () => {
     try {
-        const res = await fetch(`${API_BASE}/auth/signup`, { method: "OPTIONS" });
+        const res = await fetch(`${API_BASE}/auth/signup:8000`, { method: "OPTIONS" });
         if (res.ok) {
             document.getElementById("result").textContent = "✅ 서버 응답 정상";
         } else {
