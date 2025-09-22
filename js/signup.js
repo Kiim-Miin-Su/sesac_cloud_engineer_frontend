@@ -1,4 +1,4 @@
-const API_BASE = "http://15.165.5.106"; // Nginx 퍼블릭 IP
+const API_BASE = "https://15.165.5.106"; // Nginx 퍼블릭 IP
 
 document.getElementById("signup-form").addEventListener("submit", async (e) => {
     e.preventDefault();
